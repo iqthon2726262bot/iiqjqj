@@ -1,7 +1,7 @@
 {
-    "name": "Tepthon",
+    "name": "Forthon",
     "description": " اهلا بكم في تنصيب سورس اورنز لصيد اليوزرات !",
-    "logo" : "https://telegra.ph/file/09a6b0d947cfb8423a2d1.jpg",
+    "logo" : "https:https://graph.org/file/1b87b4995483b38180898.jpg",
     "stack": "container",
     "repository": "https://github.com/perdark/per-sed",
     "keywords": [
@@ -27,7 +27,7 @@
             "required": true
         },
         "TOKEN": {
-            "description": "توكن البوت",
+            "description": "توكن بوتك",
             "value": "",
             "required": true
         },
