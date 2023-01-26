@@ -21,7 +21,7 @@ from checktele import *
 
 # -
 
-fifthon.start()
+forthon.start()
 
 y = datetime.datetime.now().year
 m = datetime.datetime.now().month
@@ -45,16 +45,16 @@ time_bio = ["off"]
 
 async def join_channel():
     try:
-        await fifthon(JoinChannelRequest("@fifthon"))
+        await forthon(JoinChannelRequest("@forthon"))
     except BaseException:
         pass
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"هممم"))
+@forthon.on(events.NewMessage(outgoing=True, pattern=r"همم"))
 async def _(event):
     if not event.is_reply:
         return await event.edit(
-            "يستعمل الامر بالرد على الصورتهة او الفيديو !"
+            "يستعمل الامر بالرد على صورتهة او الفيديو !"
         )
     rr9r7 = await event.get_reply_message()
     await event.delete()
@@ -93,11 +93,11 @@ async def spam_function(event, sandy, cat, sleeptimem, sleeptimet, DelaySpam=Fal
             pass
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.الاوامر"))
+@forthon.on(events.NewMessage(outgoing=True, pattern=r"\.commands "))
 async def _(event):
     await event.edit(commands)
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.فحص"))
+@forthon.on(events.NewMessage(outgoing=True, pattern=r"\.check up "))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit("جارٍ...")
@@ -109,43 +109,43 @@ async def _(event):
 ☆ Ping : `{ms}`
 ☆ Date : `{m9zpi}`
 ☆ ID : `{event.sender_id}`
-☆ Source fifthon : @zbaak**
+☆ Source forthon : @S_Y_N
 ''')
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م1"))
+@forthon.on(events.NewMessage(outgoing=True, pattern=r"\.م1"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(sec1)
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م2"))
+@forthon.on(events.NewMessage(outgoing=True, pattern=r"\.م2"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(sec2)
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م3"))
+@forthon.on(events.NewMessage(outgoing=True, pattern=r"\.م3"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(sec3)
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.م4"))
+@forthon.on(events.NewMessage(outgoing=True, pattern=r"\.م4"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(sec4)
 
     
 ownerhson_id = 1041483862
-@fifthon.on(events.NewMessage(outgoing=False, pattern='/start'))
+@forthon.on(events.NewMessage(outgoing=False, pattern='/start'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
-        order = await event.reply('اهلا مطوري حلم @iziii')
+        order = await event.reply('اهلا مطوري علي @S_Y_N')
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.Restart "))
 async def update(event):
     await event.edit("• جارِ اعادة تشغيل السورس ..\n• انتضر 1-2 دقيقة  .")
     await fifthon.disconnect()
